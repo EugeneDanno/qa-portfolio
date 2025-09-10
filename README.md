@@ -34,8 +34,9 @@ My goal is to demonstrate practical QA skills and approach to testing.
 
 ## 🐞 Bug Reports
 
-- [Bug Report #1-10 / Bug Reports (Barcode and QR scanner) (Google Sheets)](https://docs.google.com/spreadsheets/d/196NEdIaHTYtqCFpLgEMst-VtDdMKlTZelGKXX11F4B0/edit?usp=sharing)
-- [Bug Report #11 / Bug Report (The Catapult 2) (Google Sheets)](https://docs.google.com/spreadsheets/d/1O7I66DU5zOnWJt5xS9o432hgVVr0Jx8tg5aN9X6gxSE/edit?usp=sharing)
+- [Bug Reports (Barcode and QR scanner) - Bug Report #1-10 (Google Sheets)](https://docs.google.com/spreadsheets/d/196NEdIaHTYtqCFpLgEMst-VtDdMKlTZelGKXX11F4B0/edit?usp=sharing)
+- [Bug Report (The Catapult 2) - Bug Report #1 (Google Sheets)](https://docs.google.com/spreadsheets/d/1O7I66DU5zOnWJt5xS9o432hgVVr0Jx8tg5aN9X6gxSE/edit?usp=sharing)
+- [Bug Report (Life is Strange) - Bug Report #1 (Google Sheets)](https://docs.google.com/spreadsheets/d/1O7I66DU5zOnWJt5xS9o432hgVVr0Jx8tg5aN9X6gxSE/edit?usp=sharing)
 
 ---
 
