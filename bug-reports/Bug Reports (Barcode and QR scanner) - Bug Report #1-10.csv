@@ -1,0 +1,41 @@
+ID,1,2,3,4,5,6,7,8,9,10
+Type,Functional,Functional,Stability,Functional,Functional,UI,UI,Functional,UX,Potential Bug
+Summary,Incorrect annual subscription price for new user / base price (959.99 / 1649.99 per year),Unable to open generated QR with long address,Crash when changing theme (needs clearing cache),QR for alarm clock not working,Incorrect redirect when loading the corresponding section,"Debug message (""qr_ads_banner_open"", ""..."") in the pop-up box","UI issues (intersecting elements, lines hitting icons)","When scanning a photo with multiple QR codes, only the first one is read","The ""Write to support"" field offers too many options","""Share to friends"" - incorrect text in the link (""oleh"")"
+Severity,Blocker,Critical,Critical,Critical,High,Medium,Medium,Low,Low,Low
+Priority,High,High,High,High,Medium,High,Medium,Low,Low,Trivial
+Pre-condition,User's first login to the app,Generated QR code in the URL / Link section with a long address (more than +- 800 characters),--,Generated QR code for alarm clock,--,--,User's first login to the app,There is a screenshot with several QR codes,--,--
+Description,"When you first log in to the application after training, a 3-day trial is offered, after which an annual subscription costs 959.99.
+An annual subscription after completing the training costs 1649.99.","When generating a QR code in the URL / Link section with a long address (more than +- 800 characters), a code is created that cannot be opened in the application using the QR code reading function from the gallery.","When changing the theme in the application, the application closes, if you repeat the procedure, an application error occurs","When trying to open a QR code for the alarm clock using the QR code reading function from the gallery, the transition to the ""Clock"" application is not performed","When going to the ""Privacy Policy"", ""Terms of Use"", ""Our site"" sections, it provides a link to download from GooglePlay","While using the application, Debug messages appear during any action.",Elements overlap on the trial and premium subscription screens,"When trying to read a QR code from a screenshot with multiple codes using the QR code reading function from the gallery, only the first one is read","When going to the ""Write to support"" section, many invalid options are provided","While checking the app link on Google Play, I noticed the ""oleh"" part in the applicationId. I need to clarify whether this is the expected name or a potential error."
+Steps to reproduce,"1. Open the app
+2. Complete the training","1. Open the photo selection window from the gallery
+2. Open the desired code using the QR code reader","1. Click the ""Settings"" button
+2. Select the ""Themes"" section
+3. Select any available theme
+4. To display the error, repeat steps 1-3","1. Open the photo selection window from the gallery
+2. Open the desired code using the QR code reader","1. Click the ""Settings"" button
+2.1. Select the ""Privacy Policy"" section
+2.2. Select the ""Terms of Use"" section
+2.3. Select the ""Our site"" section
+3. Follow the link provided",1. Log in to the application,"1. Open the app
+2.1. Complete the training
+2.2. Go to the subscription purchase section","1. Open the photo selection window from the gallery
+2. Open the desired screenshot using the QR code reader","1. Click the ""Settings"" button
+2. Select the ""Write to support"" section","1. Click the ""Settings"" button
+2. Select the ""Share to friends"" section
+3. Copy the link"
+Expected result,The price after training corresponds to the base price in the application,"All buttons (Open, Copy, Share, ...) are displayed and can be used.","The theme was changed, the application continued its work","After clicking the ""Open"" button, you will be taken to the ""Clock"" application.",Each link leads to the corresponding page.,Debug message is not displayed while using the application,Elements are displayed correctly and do not overlap other elements,"Gives you the option to select a QR code;
+Provides all links",Valid and current contact methods should be displayed first in the list.,The address must be correct and comply with the standards stated in the documentation.
+Actual result,The price after training is different from the base price in the app,"Due to the long address, the button field was moved outside the work area.",The application closes with an error,"After clicking the ""Open"" button, there is no transition to the ""Clock"" application",All links point to the app page on Google Play,Debug message appears during any action in the application,Elements are in the wrong position and overlap each other,Only the first QR code opens,"Only ""Bluetooth"", ""Calendar"", ""Translator"", ""..."" are displayed","There is a particle ""oleg"" in the applicationId"
+Attachment ,"1, 2",1,1,1,1,"1, 2, 3","1, 2",1,1,1
+Environment,"Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0","Samsung Galaxy A55
+Android 15, One UI 7.0"
+Created by,Yevhen D.,Yevhen D.,Yevhen D.,Yevhen D.,Yevhen D.,Yevhen D.,Yevhen D.,Yevhen D.,Yevhen D.,Yevhen D.
