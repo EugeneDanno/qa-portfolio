@@ -17,7 +17,7 @@ My goal is to demonstrate practical QA skills and approach to testing.
 
 ## 🛠️ Tools & Skills Demonstrated
 
-- Manual testing (web, mobile, API)  
+- Manual testing (web, mobile)  
 - Bug reporting (Jira-style, GitHub Issues)  
 - Test design techniques (checklists, test cases, boundary values, equivalence classes)  
 - GitHub for documentation & version control  
