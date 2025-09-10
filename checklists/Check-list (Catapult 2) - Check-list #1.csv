@@ -1,0 +1,15 @@
+Category,Check,Status,Comment
+Shop,Purchase,Pass,
+,Ammo,Pass,
+,Skills,Pass,
+,Coins,Pass,
+,Equipment,Pass,
+Upgrades,Guns,Fail,Failed to open menu
+,Armor,Pass,
+,Locks,Pass,
+,protection,Pass,
+Gameplay,Shooting,Pass,
+,"Activating ""Shield"" bonus",Pass,
+,Switching ammo types,Pass,
+Daily Reward,Roulette Reward,Pass,
+,Daily reward,Pass,
