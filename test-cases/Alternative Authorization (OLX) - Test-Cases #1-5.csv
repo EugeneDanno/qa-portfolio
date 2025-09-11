@@ -1,0 +1,16 @@
+ID,Check,Precondition,Steps to Reproduce,Expected Result,Actual Result,Status,Comment
+1,Successful login with Google account,"User has a valid Google account
+Registration form is open","1. Click ""Continue with Google""","User is logged into OLX, account is created or restored",Successful login via Google account,Pass,
+,,,2. Select Google account in the popup window,,,,
+,,,3. Grant access to the account,,,,
+2,Cancel authorization with Google,Registration form is open,"1. Click ""Continue with Google""",User returns to OLX login/registration form without being logged in,"There is no ""Cancel"" button",Failed,
+,,,"2. In the Google popup, click ""Cancel""",,,,
+3,Attempt login with disabled Google account,Registration form is open,"1. Click ""Continue with Google""","User sees Google error message, login not completed",Login failed. Return to registration page.,Pass,
+,,,2. Select a disabled/blocked Google account,,,,
+4,Attempt login with invalid Facebook credentials,Registration form is open,"1. Click ""Continue with Facebook""","Facebook shows error ""Incorrect email or password"", user is not logged into OLX","Facebook shows the error ""Incorrect email or password"", the user is not logged in to OLX, but remains on the Facebook login page",Failed,
+,,,2. Enter incorrect email/password in Facebook popup,,,,
+,,,"3. Click ""Login""",,,,
+5,Successful login with Apple ID,"User has active Apple ID
+Registration form is open","1. Click ""Continue with Apple""","User is logged into OLX, account is created or restored",Successful login via Apple account,Pass,
+,,,2. Enter valid Apple ID details,,,,
+,,,3. Confirm login,,,,
