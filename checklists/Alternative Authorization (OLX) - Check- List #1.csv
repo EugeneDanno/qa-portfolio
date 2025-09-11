@@ -1,0 +1,13 @@
+ID,Check,"Google Chrome
+140.0.7339.82","Microsoft Edge
+140.0.3485.54",Comment
+1," ""Continue with Google"" button is visible and clickable.",Pass,Pass,
+2,"""Continue with Facebook"" button is visible and clickable.",Pass,Pass,
+3,"""Continue with Apple"" button is visible and clickable.",Pass,Pass,
+4,"Clicking ""Continue with Google"" opens the Google account selection window.",Pass,Pass,
+5,"Clicking ""Continue with Facebook"" opens the Facebook login window.",Pass,Pass,
+6,"Clicking ""Continue with Apple"" opens the Apple ID login window.",Pass,Pass,
+7,Successful login via Google creates/restores the OLX account.,Pass,Pass,
+8,Successful login via Facebook creates/restores the OLX account.,Pass,Pass,
+9,Successful login via Apple creates/restores the OLX account.,Pass,Pass,
+10,"If the user cancels authorization, they return to the OLX login/registration form.",Pass,Pass,

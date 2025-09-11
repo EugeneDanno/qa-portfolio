@@ -1,0 +1,12 @@
+ID,Check,"Google Chrome
+140.0.7339.82","Microsoft Edge
+140.0.3485.54",Comment
+1,"""Continue with Facebook / Apple / Google"" buttons are visible and clickable.",Pass,Pass,
+2,"Switching between ""Login"" and ""Register"" tabs works correctly.",Pass,Pass,
+3,"The ""Email or phone number"" field is required.",Pass,Pass,
+4,"Email validation works (valid: user@mail.com; invalid: user@com, user@, user.com).",Pass,Pass,
+5,"The ""Password"" field is required.",Pass,Pass,
+6,"Password validation: at least 9 characters, one uppercase letter, one lowercase letter, one digit.",Pass,Pass,
+7,"The ""Show/Hide password"" button works correctly.",Pass,Pass,
+8,"Checkbox ""I want to receive news and promotions"" is optional.",Pass,Pass,
+9,"Without filling in the required fields, the ""Register"" button remains inactive.",Pass,Pass,
