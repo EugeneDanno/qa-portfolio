@@ -1,6 +1,6 @@
 # Junior QA Portfolio
 
-Hi, my name is Yevgen Danno
+Hi, my name is Yevgen Danno!
 Welcome to my QA portfolio!
 Here I collect examples of my work as a QA engineer, including test cases, bug reports, checklists, and small projects. 
 My goal is to demonstrate practical QA skills and testing approach.
