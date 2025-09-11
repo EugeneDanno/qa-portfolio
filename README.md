@@ -1,8 +1,9 @@
 # Junior QA Portfolio
 
-Welcome to my QA portfolio!   
-Here I collect examples of my work as a Quality Assurance Engineer, including test cases, bug reports, checklists, and small projects.  
-My goal is to demonstrate practical QA skills and approach to testing.
+Hi, my name is Yevgen Danno
+Welcome to my QA portfolio!
+Here I collect examples of my work as a QA engineer, including test cases, bug reports, checklists, and small projects. 
+My goal is to demonstrate practical QA skills and testing approach.
 
 ---
 
@@ -11,7 +12,6 @@ My goal is to demonstrate practical QA skills and approach to testing.
 - **/test-cases** – examples of functional and UI test cases  
 - **/bug-reports** – bug reports written in professional format (Steps → Actual → Expected)  
 - **/checklists** – checklists for different features (smoke, regression, UI/UX)  
-- **/test-docs** – additional docs (Postman collections, reports, diagrams, etc.)
 
 ---
 
@@ -27,8 +27,7 @@ My goal is to demonstrate practical QA skills and approach to testing.
 ## 📌 Example Projects
 
 - **E-commerce website** – smoke checklist, bug reports  
-- **Login/Registration forms** – positive & negative test cases  
-- **REST API** – Postman tests for GET/POST methods  
+- **Login/Registration forms** – positive & negative test cases
 
 ---
 
