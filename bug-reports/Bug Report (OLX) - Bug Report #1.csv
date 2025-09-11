@@ -1,0 +1,16 @@
+ID,1
+Type,Bug (Functional)
+Summary,"The ""Register"" button becomes active without entering an email address."
+Severity,Critical
+Priority,High
+Pre-condition,Registration form is open
+Description,"If you enter a valid password in the registration window, but leave the email/phone field blank, the ""Register"" button becomes active."
+Steps to reproduce,"1. Leave ""Email or phone number"" field empty"
+,2. Enter a valid password : Testuser15
+Expected result,"The ""Register"" button is inactive"
+Actual result,"The ""Register"" button is active and it is possible to complete registration."
+Attachment,Screenshot #1
+Environment,"Google Chrome
+140.0.7339.82"
+Version,2.1.2002
+Created by,Yevhen Danno

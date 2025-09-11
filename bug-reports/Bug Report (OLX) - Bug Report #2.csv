@@ -1,0 +1,17 @@
+ID,1
+Type,Bug (Functional)
+Summary,Facebook login freezes on confirmation screen
+Severity,High
+Priority,High
+Pre-condition,Registration form is open
+Description,"When logging in via Facebook, the process hangs on the confirmation screen, and the user does not get redirected to OLX."
+Steps to reproduce,"1. Click ""Continue with Facebook"""
+,2. Enter valid Facebook account details
+,3. Confirm login
+Expected result,User should be redirected to OLX profile
+Actual result,"Page freezes on confirmation, login not completed"
+Attachment,Screenshot #1
+Environment,"Google Chrome
+140.0.7339.82"
+Version,2.1.2002
+Created by,Yevhen Danno
