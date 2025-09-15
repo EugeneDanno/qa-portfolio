@@ -1,0 +1,35 @@
+ID,1,2,3,4,5,6,7
+Type,Validation / Functional,Functional / UI,Functional / Backend,Navigation / Functional,Content / UI,Navigation / UI,Navigation / Functional
+Summary,The system allows registration with an invalid email format.,"After clicking “Go to homepage” inside the “My travels” pop-up, the window remains open.",Providing multiple incorrect inputs to the chatbot results in a crash with no further response,"While completing the training, at steps 2-6, click the ""Back"" button in the browser",Missing first 2 photos in offer,“Cookie Policy” button not working,"When opening offers with the “Open in new tab” function, the wrong offer page is loaded."
+Severity,Critical,Critical,Critical,Critical,Medium,Low,Critical
+Priority,High,High,High,High,High,Medium,High
+Pre-condition,Open registration window on the website,"You are logged in to the site;
+There was no travels on the account.",A chatbot window has opened on the website.,"New account, or ""Restart training"" option selected.",Be on the right page of the site,Be on the main page of the site,Be on the main page of the site
+Description,"When registering on the website, the client can use an invalid email (comm; uasdf; ..)","The pop-up window does not close when you click the ""Go to homepage"" button after you have gone to the ""My travels"" section.","After several attempts to provide incorrect information to the chatbot, an error occurs and the chat ends.","An error occurs if you click the ""Back"" button in your browser while following the tutorial in steps 2-6",The first 2 photos are missing from the hotel room offer.,"After clicking the ""Cookie Policy"" button, there is no transition to the page","When you open offers via the ""Open in new tab"" function in the browser on the home page of the site, after a quick error message, the page of the first offer that was displayed on the home page of the site opens."
+Steps to reproduce,"1. Enter invalid email
+2. Enter valid password
+3. Confirm password
+4. Press ""Register now""","1. Press ""Account"" button in the site header
+2. Press ""My travels"" button
+3. Press ""Go to homepage"" button","1. Enter incorrect info to chatbot
+2. Continue to provide incorrect information after receiving a message from the chatbot
+3. After an error occurs, click the ""Refresh"" button","1. In the tutorial window, select ""Start tutorial""
+2. Select the first offer on the main page of the site
+3. Press the ""Back"" button in your browser ","1. Follow the link to the offer
+2. Open the first photo in the offer
+3. Open the second photo in the offer
+","1. Click the ""Cookie Policy"" button","1. Click ""RMB"" on any offer except the first one
+2. Select the ""Open in new window"" function"
+Expected result,"""Please use a valid email"" message displayed","Pop-up window closed, site home page open","The window is still open, the chat continues, the chatbot clarifies whether the information provided by the client is correct.",Return to previous page; Training begins from the beginning,All photos are correctly displayed in the offer.,"You will be redirected to the ""Cookie Policy"" page.",The page you were trying to open opens.
+Actual result,Registration successful,"The pop-up window remains, with the site's main page open in the background","An error occurs, the chat is over, no response received",An error occurs; Unable to continue learning,The first two photos in the offer are not displayed correctly.,"There is no redirection to the ""Cookie Policy"" page",The page of the first offer that was displayed on the main page of the site opens.
+Attachment,1,"1, 2","1, 2",1,"1, 2, 3",1,"1, 2, 3"
+Environment,"Google Chrome
+v. 140.0.7339.128","Google Chrome
+v. 140.0.7339.128","Google Chrome
+v. 140.0.7339.128","Google Chrome
+v. 140.0.7339.128","Google Chrome
+v. 140.0.7339.128","Google Chrome
+v. 140.0.7339.128","Google Chrome
+v. 140.0.7339.128"
+Version,Test build : https://demo.winwin.travel/,Test build : https://demo.winwin.travel/,Test build : https://demo.winwin.travel/,Test build : https://demo.winwin.travel/,Test build : https://demo.winwin.travel/,Test build : https://demo.winwin.travel/,Test build : https://demo.winwin.travel/
+Created by,Yevhen Danno,Yevhen Danno,Yevhen Danno,Yevhen Danno,Yevhen Danno,Yevhen Danno,Yevhen Danno
