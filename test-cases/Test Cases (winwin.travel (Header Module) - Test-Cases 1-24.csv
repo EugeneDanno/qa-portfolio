@@ -1,0 +1,38 @@
+ID,Check,Precondition,Steps to Reproduce,Expected Result,Actual Result,Status,Comment
+TC-001,Verify Home button redirects correctly,User is on any page,1. Click Home button,User is redirected to the main page,Redirection is working correctly,Pass,
+TC-002,Verify Support button redirects correctly,User is on any page,1. Click Support button,User is redirected to the support/donation page,Redirection is working correctly,Pass,
+TC-003,Verify Share button opens share options,User is on any page,1. Click Share this page button,"Share options menu opens (Copy link, Messenger, Instagram, WhatsApp, Facebook, More options)",Button is working correctly,Pass,
+TC-004,"Verify ""Copy link"" option in Share menu",Share menu is open,1. Click Copy link,Current page link is copied to clipboard,Button is working correctly,Pass,
+TC-005,Verify social media share options,Share menu is open,1. Click Messenger / Instagram / WhatsApp / Facebook,The corresponding page opens.,Buttons is working correctly,Pass,
+TC-006,"Verify ""More options"" in Share menu",Share menu is open,1. Click More options,Opens a window with other available share options,Message “This feature is under development” is displayed,Fail,This feature is under development
+TC-007,Verify Notifications button,User is on any page,1. Click Notifications button,Opens a pop-up window with notifications,Message “This feature is under development” is displayed,Fail,This feature is under development
+TC-008,Verify Compare button without liked hotel rooms,User is logged in/out,1. Click Compare button,Message “Not enough likes!” is displayed,Correct notification displayed,Pass,
+TC-009,Verify Compare button with liked hotel rooms,User has liked ≥2 hotels,1. Click Compare button,User is redirected to the comparison page,Redirection is working correctly,Pass,
+TC-010,Verify Account button options when  logged out,"Account menu is open
+User is logged out",1. Click Account button,"Dropdown opens with: Account settings, My travels, Chat, Restart tutorial, Language",The correct menu opened; The correct options are displayed,Pass,
+TC-011,Verify Account button options when logged in,"Account menu is open
+User is logged in",1. Click Account button,"Dropdown opens with: Account settings, My travels, Chat, Restart tutorial, Language, Log out",The correct menu opened; The correct options are displayed,Pass,
+TC-012,Verify Account Settings option,"Account menu is open
+User is logged in",1. Click Account settings,Opens a window with Account settings,Message “This feature is under development” is displayed,Fail,This feature is under development
+TC-013,Verify My travels option,"Account menu is open
+User is logged in/out",1. Click My travels,User is redirected to travel history page,Redirection is working correctly,Pass,
+TC-014,Verify Chat option,"Account menu is open
+User is logged in/out",1. Click Chat,Chatbot window opens,Redirection is working correctly,Pass,
+TC-015,Verify Restart tutorial option,"Account menu is open
+User is logged in/out",1. Click Restart tutorial,Tutorial restarts from the beginning,Buttons is working correctly,Pass,
+TC-016,Verify Language option,"Account menu is open
+User is logged in/out",1. Click Language,A pop-up opened with the language change.,Message “This feature is under development” is displayed,Fail,This feature is under development
+TC-017,Verify Register form opens,User is logged out,1. Click Register button,"A registration form opens with fields (Email, Password, Confirm password) and buttons for registration via social networks.",Redirection is working correctly,Pass,
+TC-018,Verify Register via Facebook,"Register form is open
+User is logged out",1. Click Facebook,Facebook sign-in popup opens,Message “This feature is under development” is displayed,Fail,This feature is under development
+TC-019,Verify Register via Google,"Register form is open
+User is logged out",1. Click Google,Google sign-in popup opens,Redirection is working correctly,Pass,
+TC-020,Verify Register via Apple,"Register form is open
+User is logged out",1. Click Apple,Apple sign-in popup opens,Message “This feature is under development” is displayed,Fail,This feature is under development
+TC-021,Verify Sign-in form opens,User is logged out,1. Click Sign-in button,"Sign-in form opens with fields (Email, Password) and buttons",Redirection is working correctly,Pass,
+TC-022,Verify Sign-in via Facebook,"Sign-in form is open
+User is logged out",1. Click Facebook,Facebook sign-in popup opens,Message “This feature is under development” is displayed,Fail,This feature is under development
+TC-023,Verify Sign-in via Google,"Sign-in form is open
+User is logged out",1. Click Google,Google sign-in popup opens,Redirection is working correctly,Pass,
+TC-024,Verify Sign-in via Apple,"Sign-in form is open
+User is logged out",1. Click Apple,Apple sign-in popup opens,Message “This feature is under development” is displayed,Fail,This feature is under development
