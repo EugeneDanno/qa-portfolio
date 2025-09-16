@@ -1,0 +1,21 @@
+ID,Check,Precondition,Steps to Reproduce,Expected Result,Actual Result,Status,Comment
+TC-001,Verify authorization module UI elements are present,"User is not authenticated; 
+Open chatgpt.com","1. Open the site; 
+2. Open the authorization module","Module displays header text, email input (placeholder “Email address”), “Continue” button, “OR” separator, social login buttons (Google, Microsoft, Apple), “Sign in with phone” option, “Terms of Use” and “Privacy Policy” links.",Module displays all listed elements.,Pass,
+TC-002,Continue with empty email shows required message,"Module open; 
+email field empty","1. Leave email field empty; 
+2. Click Continue",Error message “Please provide an email address” is shown (and user does not proceed).,Error message displayed (“Please provide an email address”) and user remains on module.,Pass,
+TC-003,Valid email proceeds to next step,Module open,"1. Enter valid e-mail ""test@test.com""; 
+2. Click Continue",System proceeds to next step (password input),System proceeds to the next step (password field is shown).,Pass,
+TC-004,Email without “@” is rejected,Module open,"1. Enter test.com; 
+2. Click Continue",Validation error “The email address is invalid.” is shown and user cannot proceed.,Validation error shown (“The email address is invalid.”) and user remains on module.,Pass,
+TC-005,Email with incorrect domain (test@test.coooom) should be rejected,Module open,"1. Enter test@test.coooom; 
+2. Click Continue",Validation error “The email address is invalid.” is shown and user cannot proceed.,System accepts test@test.coooom and proceeds to the next step without domain validation.,Fail,
+TC-006,Spaces before and after email are removed,Module open,"1. Enter "" test@test.com "" (spaces around); 
+2. Click Continue",The system removes the spaces and accepts the email test@test.com as valid.,The system removes the spaces and moves on to the next step (the email is normalized).,Pass,
+TC-007,"The ""Google"" button opens the Google login window",Module open,1. Click Sign in with Google,Google login pop-up window will open and the user can continue using their Google account.,Google sign-in window will open as expected.,Pass,
+TC-008,"The ""Microsoft"" button opens the Microsoft login window",Module open,1. Click Continue with Microsoft,Microsoft login pop-up window will open and the user can continue using their Microsoft account.,Microsoft sign-in window will open as expected.,Pass,
+TC-009,"The ""Apple"" button opens the Apple login window",Module open,1. Click Continue with Apple,Apple login pop-up window will open and the user can continue using their Apple account.,Apple sign-in window will open as expected.,Pass,
+TC-010,"""Log in with phone number"" opens a field for entering phone number data",Module open,1. Click Sign in with phone,A form to enter a phone number appears.,"A form for entering a phone number will open, where you can write it.",Pass,
+TC-011,“Terms of Use” link opens in new tab,Module open,1. Click Terms of Use link,Terms of Use page opens in a new tab/window.,Terms of Use page opens.,Pass,
+TC-012,“Privacy Policy” link opens in new tab,Module open,1. Click Privacy Policy link,Privacy Policy page opens in a new tab/window.,Privacy Policy page opens.,Pass,
