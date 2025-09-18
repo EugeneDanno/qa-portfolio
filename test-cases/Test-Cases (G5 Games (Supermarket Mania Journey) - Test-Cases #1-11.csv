@@ -1,0 +1,20 @@
+ID,Check,Precondition,Steps to Reproduce,Expected Result,Actual Result,Status,Comment
+TC-001,Verify sound toggle works correctly,User is on main screen,"1. Open dropdown menu near location name.
+2. Click the sound toggle.",Sound turns ON/OFF depending on the toggle state.,Sound toggled correctly.,Pass,
+TC-002,Verify music toggle works correctly,User is on main screen,"1. Open dropdown menu near location name.
+2. Click the music toggle.",Music turns ON/OFF depending on the toggle state.,Music toggled correctly.,Pass,
+TC-003,Verify Legal menu opens,User is on main screen,"1. Open dropdown menu near location name.
+2. Click the “Legal” button.",Legal page is opened.,Legal page opened correctly.,Pass,
+TC-004,Verify “More Games” button redirects correctly,User is on main screen,1. Click “More Games” button in the bottom-left corner.,User is redirected to other G5 games list.,Redirection works correctly.,Pass,
+TC-005,Verify life counter decreases after playing level,User has ≥ 1 lives,"1. Start any level.
+2. Lose the level.","The icon changes.
+One life lost.",Life count decreased correctly.,Pass,
+TC-006,Verify currency is spent in Upgrade Shop phase,User starts a level,"1. Click on any level to start.
+2. On ""Upgrade Shop"" phase, click on any orange icon above shop counters to upgrade.
+3. Confirm purchase.",Coins or diamonds are deducted according to the selected upgrade.,Currency was deducted correctly.,Pass,
+TC-007,Verify Starter Pack offer is visible,"User is on main screen
+User is new to the game",1. Click on the chest icon.,The chest with discounted Starter Pack is visible.,Offer is shown correctly.,Pass,
+TC-008,Verify currency purchase window opens,User is on main screen,1. Click the “+” icon near coins or diamonds in the top-right corner.,In-game store opens with purchase options.,Store opens correctly.,Pass,
+TC-009,Verify G5 Friends button works,User is on main screen,1. Click G5 Friends icon in the bottom-right corner.,G5 Friends screen opens (social menu).,The menu is open.,Pass,
+TC-010,"Verify ""Share"" button works",User is on main screen,"1. Click the ""Share"" icon (in the lower right corner).","""Share"" window opens.",The invitation window opened correctly.,Pass,
+TC-011,Verify Casino button works,User is on main screen,1. Click Casino icon,User is redirected to the Casino screen.,"The ""casino"" window opened correctly.",Pass,
