@@ -1,0 +1,76 @@
+ID,Check,Precondition,Steps to Reproduce,Expected Result,Actual Result,Status,Comment
+TC-001,Ethernet connection,"Ethernet cable plugged in; 
+Active internet","1. Power on Hub; 
+2. Open Ajax app; 
+3. Check connection status",Hub connects via Ethernet,Hub connected via Ethernet successfully,Pass,
+TC-002,4G SIM connection,Active SIM card installed,"1. Remove Ethernet cable; 
+2. Wait for auto-switch; 
+3. Check connection status in Ajax app",Hub switches to 4G SIM connection,Hub switched to 4G successfully,Pass,
+TC-003,Automatic channel switching,Ethernet cable plugged in; Active SIM card installed,"1. Disconnect Ethernet cable; 
+2. Check connection status; 
+3. Reconnect Ethernet cable","Hub switches to SIM when Ethernet is lost; 
+Hub switches back when Ethernet is restored",Switching worked as expected,Pass,
+TC-004,Invalid SIM card,"Invalid SIM card inserted; 
+No valid SIM","1. Power on Hub; 
+2. Remove Ethernet cable; 
+3. Wait for SIM connection","Hub should not connect; 
+Error notification should appear",Hub shows “No connection” without clear error,Fail,"No error message if SIM card is invalid;
+BR-001"
+TC-005,Adding MotionCam sensor,"Hub powered on; 
+MotionCam reset","1. Open Ajax app; 
+2. Tap “Add device”; 
+3. Activate MotionCam sensor",Sensor successfully added and displayed in device list,Device appeared in device list,Pass,
+TC-006,MotionCam photo delivery,Hub paired with MotionCam,"1. Simulate movement in sensor area; 
+2. Wait for alarm; 
+3. Open Ajax app",Photo from MotionCam is received in the app,Photo received in the app,Pass,
+TC-007,Push notification on alarm,"Ajax app installed; 
+Hub paired with MotionCam","1. Trigger alarm with MotionCam; 
+2. Check smartphone notifications",Push notification is received on smartphone,Push notification received,Pass,
+TC-008,SMS notification on alarm,"SIM with SMS plan inserted; 
+User phone number linked","1. Trigger alarm with sensor; 
+2. Check SMS inbox",SMS received on user’s phone,SMS received successfully,Pass,
+TC-009,Hub battery backup,Hub connected to mains,"1. Disconnect main power supply; 
+2. Monitor Hub status in app",Hub switches to backup battery and works up to 16 hours,Hub switched to backup battery and continued working,Pass,
+TC-010,Backup battery duration,Hub running on backup battery only,"1. Disconnect main power supply; 
+2. Keep Hub running >16 hours; 
+3. Monitor status",Hub should shut down after ~ 16 hours and send low-battery alert,Hub shut down unexpectedly after 14h without warning,Fail,"Low-battery alert not delivered before shutdown;
+BR-002"
+TC-011,Lost connection to Ajax Cloud,"Hub online; 
+Internet connection active","1. Block internet connection; 
+2. Wait ≤1 min",User notified about lost connection within 1 min,Notification received within 1 min,Pass,
+TC-012,Lost connection with sensor,Hub and sensor paired,"1. Remove battery from sensor; 
+2. Wait ≤36 sec",App shows lost connection with sensor within 36 sec,App showed sensor lost within 36 sec,Pass,
+TC-013,Tamper protection,Hub installed with tamper switch enabled,"1. Open Hub casing; 
+2. Monitor notifications",Notification about tamper event is received,Notification about tamper event is received,Pass,
+TC-014,Max users support,Hub added to Ajax app,1. Add 50 different users,Hub accepts 50 users,50 users successfully added,Pass,
+TC-015,Exceed maximum users,"Hub added to Ajax app; 
+50 users already added",1. Try adding 51st user,Hub should block user addition with clear message,"User addition blocked, but no message shown",Fail,"System silently prevents adding without feedback;
+BR-003"
+TC-016,Room management,Hub added to Ajax app,1. Create 50 rooms,Hub supports 50 rooms,50 rooms created successfully,Pass,
+TC-017,Automation scenario,Hub added to Ajax app,1. Create 32 automation scenarios,Hub supports 32 automation rules,32 scenarios created successfully,Pass,
+TC-018,Camera integration,Hub added to Ajax app,1. Add 25 IP cameras,Hub supports up to 25 cameras,25 cameras successfully added,Pass,
+TC-019,Camera integration limit exceeded,"Hub added to Ajax app; 
+25 cameras already connected",1. Try adding 26th camera,Hub should prevent adding and display warning,"Hub allows to attempt, then fails silently",Fail,"System does not inform about exceeding camera limit;
+BR-004"
+TC-020,Group management,Hub added to Ajax app,1. Create 9 security groups,Hub supports 9 groups,9 groups created successfully,Pass,
+TC-021,Multiple channel test (Ethernet + SIM),"Ethernet cable plugged in; 
+Two SIM cards inserted","1. Disconnect Ethernet; 
+2. Disconnect SIM1; 
+3. Verify Hub switches to SIM2",Hub continues working using available channels,Hub switched between channels as expected,Pass,
+TC-022,Firmware update online,Hub online,"1. Open Ajax app; 
+2. Go to settings; 
+3. Tap “Check firmware update”",Hub updates firmware successfully,Firmware updated successfully,Pass,
+TC-023,Cloud availability,Hub online,"1. Disconnect internet for 1 min; 
+2. Reconnect internet; 
+3. Check Hub status",Hub restores connection automatically,Hub reconnected automatically,Pass,
+TC-024,Radio jamming detection,Hub and sensor paired,"1. Use jammer near sensor; 
+2. Monitor Hub response",Hub notifies about jamming attempt,Jamming attempt detected and notified,Pass,
+TC-025,Power restore,Hub on backup battery,"1. Reconnect main power supply; 
+2. Check Hub status",Hub switches back to mains,Hub switched back to mains,Pass,
+TC-026,Supported temperature range,Hub in test lab,"1. Set temperature to -10°C; 
+2. Increase to +40°C; 
+3. Monitor Hub behavior",Hub operates normally in supported range,Hub worked properly in tested range,Pass,
+TC-027,Push notification disabled in phone settings,"Ajax app installed; 
+Push notifications disabled in OS",1. Trigger alarm with sensor,"Hub should still generate push; 
+User should be warned in app","Alarm triggered, but no push notification received",Fail,"No warning shown that push is disabled at OS level;
+BR-005"
